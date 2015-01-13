@@ -3,7 +3,7 @@ import time
 import RPi.GPIO as GPIO
 
 # A variable to store the GPIO associated with the PIR
-pir = 24
+pir = 17
 
 # Set the numbering scheme to use the BCM scheme
 GPIO.setmode(GPIO.BCM)

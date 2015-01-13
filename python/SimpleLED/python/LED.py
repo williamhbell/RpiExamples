@@ -3,10 +3,10 @@ import time
 import RPi.GPIO as GPIO
 
 # Declare some variables to hold the GPIO numbers of the LEDs
-red = 23 
-green = 18
-blue = 17
-yellow = 4
+red = 4
+green = 25
+blue = 24
+yellow = 23
 leds = [ red, green, blue, yellow ]
 
 # Number of seconds to wait
