@@ -40,8 +40,8 @@ def main():
 
   # Uncomment the loop below to test all of the functions
   #for i in xrange(2):
-  #  moveArm(1,movement["light_on"])
-  #  moveArm(1,movement["shoulder_up"])
+  #  moveArm(roboArm,1,movement["light_on"])
+  #  moveArm(roboArm,1,movement["shoulder_up"])
   #  moveArm(1,movement["shoulder_down"])
   #  moveArm(1,movement["elbow_down"])
   #  moveArm(1,movement["elbow_up"])
