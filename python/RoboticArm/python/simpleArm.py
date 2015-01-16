@@ -5,7 +5,7 @@
 import usb.core, usb.util, time
 
 # A simple function to act on one motor or the LED at a time
-def moveArm(duration, cmd):
+def moveArm(roboArm,duration, cmd):
   roboArm.ctrl_transfer(0x40,6,0x100,0,cmd,1000)
   time.sleep(duration)
   roboArm.ctrl_transfer(0x40,6,0x100,0,[0,0,0],1000)
@@ -36,7 +36,7 @@ def main():
     raise ValueError("Arm not found")
   
   # Turn the gip light on for 1 second
-  moveArm(1,movement["light_on"])
+  moveArm(roboArm,1,movement["light_on"])
 
   # Uncomment the loop below to test all of the functions
   #for i in xrange(2):
